@@ -1,0 +1,260 @@
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 350px  2fr 2fr 1fr;
+  grid-template-areas:
+  "header header"
+  "left-upper right-upper"
+  "left-lower right-lower"
+  "slide slide";
+  background-image: linear-gradient(#f9e0c0,#ea982e);
+  width: 100vw;
+  font-family: 'Noto Serif KR', sans-serif;
+  font-size: 20px;
+}
+.header{
+  grid-area: header;
+  font-size: 20px;
+  background-image: url("../images/andesbackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid;
+  box-shadow: 1px 10px 18px #eda425;
+}
+.logo{
+  float: left;
+  display: block;
+  padding-left: 10px;
+}
+.logo img{
+  width: 200px;
+  height: 110px;
+  padding-top: 50px;
+}
+.logo img:hover{
+  height: 130px;
+  margin-top: 10px;
+}
+.rightNav{
+  float: right;
+  display: block;
+  text-align: center;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+
+}
+.rightNav a{
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+
+}
+.rightNav a:hover{
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.pageTitle{
+  text-align: center;
+  text-decoration:overline;
+  color: white;
+  padding-top: 120px;
+  padding-right: 100px;
+  font-size: 25px;
+}
+/* .pageTitle:hover{
+  font-size: 30px;
+} */
+
+.left-upper{
+  grid-area: left-upper;
+  text-align: center;
+  box-shadow: 10px 10px;
+  margin-right: 20px;
+  padding-top: 100px;
+
+}
+.mitad:hover {
+  transform: scaleX(-1);
+}
+.right-upper{
+  grid-area: right-upper;
+  text-align: center;
+  padding-top: 100px;
+  margin-right: 20px;
+}
+
+.left-lower{
+  grid-area: left-lower;
+  text-align: center;
+  padding-left: 20px;
+  padding-top: 50px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #d1bc87}
+
+th {
+    background-color: #665835;
+    color: white;
+}
+.right-lower{
+  grid-area: right-lower;
+  text-align: center;
+  box-shadow: 10px 10px;
+  margin-right: 20px;
+  padding-top: 100px;
+}
+.slide{
+  grid-area: slide;
+  display:flex;
+  flex-direction: row;
+  padding-left: 350px;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+.slide img{
+  border: solid black;
+}
+.slide button{
+  display: inline-block;
+ padding: 15px 25px;
+ font-size: 24px;
+ cursor: pointer;
+ text-align: center;
+ text-decoration: none;
+ outline: none;
+ color: #fff;
+ background-color: #efb970;
+ border: none;
+ border-radius: 15px;
+ box-shadow: 0 9px #999;
+ height: 370px;
+ width: 120px;
+}
+.slide button:hover{
+  background-color: #bf7f28;
+}
+.slide button:active {
+  background-color: #5b3e18;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.dropbtn {
+    background-color: #b7840e;
+    color: white;
+    padding: 18px;
+    font-size: 18px;
+    border: none;
+    cursor: s-resize;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #efd494;
+}
+
+#myInput {
+    border-box: box-sizing;
+    background-image: url('../images/explore.png');
+    background-size: contain;
+    background-position:left;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    padding: 14px 20px 12px 50px;
+    border: none;
+    border-bottom: 2px solid #d89b0a;
+}
+
+#myInput:focus {outline: 3px solid #d89b0a;}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-left: 150px;
+    padding-top: 50px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f2e7cd;
+    min-width: 250px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 14px 18px;
+    display: block;
+}
+
+.dropdown a:hover {
+  background-color: #f2deae;
+}
+
+.show {
+  display: block;
+}
+.llama{
+  float: right;
+  width: 200px;
+  height: 300px;
+  margin-top: 350px;
+  position: relative;
+  background-image: url("../images/llama.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation-name: moveLlama;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+@keyframes moveLlama {
+  0%{
+    transform: rotate(0deg);
+    left: 0px;
+  }
+  25%{
+    transform: rotate(5deg);
+    left: -100px;
+  }
+  50%{
+    transform: rotate(0deg);
+    left: -500px;
+  }
+  55%{
+    transform: rotate(0deg);
+    left: -600px;
+  }
+  70%{
+    transform: rotate(0deg);
+    left: -900px;
+  }
+  100%{
+    transform:rotateY(180deg);
+    left: -700px;
+  }
+  50%{
+    left: -600px;
+  }
+  0%{
+    left: 0;
+  }
+
+}

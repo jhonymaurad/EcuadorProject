@@ -1,0 +1,163 @@
+h2{
+  color: #229313;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 2fr;
+  grid-template-areas:
+  "header header"
+  "video video"
+  "leftSide rightSide"
+  "leftlower rightlower";
+  background-image: linear-gradient(#eaf9f9,#c3def7);
+  width: 100vw;
+  font-family: 'Noto Serif KR', sans-serif;
+  font-size: 20px;
+  color: #06300e;
+}
+.header{
+  grid-area: header;
+  width: 100vw;
+  font-size: 20px;
+  background-image: url("../images/ecuadorbackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid;
+  box-shadow: 1px 10px 18px #5596db;
+}
+.logo{
+  float: left;
+  display: block;
+  padding-left: 20px;
+
+}
+.logo img{
+  width: 190px;
+  height: 110px;
+  padding-top: 130px;
+}
+.logo img:hover{
+  height: 130px;
+  margin-top: 10px;
+}
+.rightNav{
+  float: right;
+  display: block;
+  text-align: center;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+
+}
+.rightNav a{
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-family: 'Noto Serif KR', sans-serif;
+
+}
+.rightNav a:hover{
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.pageTitle{
+  grid-area: pageTitle;
+  text-align: center;
+  text-decoration:overline;
+
+  padding-top: 130px;
+  color: white;
+}
+/* .pageTitle:hover{
+  font-size: 25px;
+} */
+.video{
+  grid-area: video;
+  text-align: center;
+  padding-top: 90px;
+}
+
+.leftSide{
+  grid-area: leftSide;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.rightSide{
+  grid-area: rightSide;
+  text-align:center;
+  margin-top: 20px;
+}
+.leftlower{
+  grid-area: leftlower;
+  text-align:center;
+  margin-top: -50px;
+}
+.rightlower{
+  grid-area: rightlower;
+  text-align:center;
+  margin-top: -50px;
+  margin-right: 20px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    text-align: center;
+    font-size: 35px;
+
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration:none;
+    font-weight: bolder;
+
+    cursor: pointer;
+}
+.form [type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  background-color: #54caf2;
+  color: white;
+
+}
+.form [type=submit] {
+  background-color: #058ab7;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}

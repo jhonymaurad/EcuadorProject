@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR" rel="stylesheet">
+    <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        function validateform(form){
+          var name = form["name"].value;
+          var email = form["e-mail"].value;
+          if(name == ""){
+            window.alert("Name is missing");
+            return false;
+          }
+          else if (email == "") {
+            window.alert("E-mail is blank");
+            return false;
+
+          }else{
+            window.alert("Thank you for subscribing to the Newsletter " + name +" "+ email);
+            // return false;
+            // $("#modal").css("display","");
+          }
+        }
+ // function to change the display from none to block
+        function openmodal(){
+          $("#modal").css("display","block");
+        }
+
+    </script>
+
+  </head>
+  <body  onload="startTime();openmodal();">
+    <div class="container">
+      <div class="header">
+        <ul>
+          <li class="logo"><a class="logo" href="../index.html"><img src="../images/logo-ecuador3.png"</a></li>
+          <li class="rightNav"><a href="../pages/cuenca.html">CUENCA</a></li>
+          <li class="rightNav"><a href="../pages/amazon.html">AMAZON</a></li>
+          <li class="rightNav"><a href="../pages/andes.html">ANDES</a></li>
+          <li class="rightNav"><a href="../pages/pacific.html">PACIFIC COAST</a></li>
+          <li class="rightNav"><a href="../pages/galapagos.html">GALAPAGOS</a></li>
+          <li class="rightNav"><a href="../pages/about.html">ABOUT</a></li>
+        </ul>
+        <div class="pageTitle">
+          <h1>ECUADOR: FOUR WORLDS IN ONE PLACE</h1>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="video">
+        <iframe width="1300" height="500" src="https://www.youtube.com/embed/mTyhK_-CP64" frameborder="1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="clock">
+              <h2>Local Time: </h2>
+              <h1 id="myClock"></h1>
+        </div>
+      </div>
+
+    <div class="leftSide">
+      <h2>Welcome to Ecuador</h2>
+      <p>Postcard-pretty colonial centers, waves splashing white-sand beaches, Kichwa villages, Amazonian rainforest and the breathtaking Andes – a dazzling array of wonders is squeezed into this compact country.</p>
+      <h3>Cultural Splendor</h3>
+      <p>The historic centers of Quito and Cuenca are lined with photogenic plazas, 17th-century churches and monasteries, and beautifully restored mansions. Wandering the cobblestone streets amid architectural treasures from Spanish colonial days is a fine way to delve into the past. Beyond the cities, the Ecuadorian landscape unfolds in all its startling variety. There are Andean villages renowned for their colorful textiles and sprawling markets, Afro-Ecuadorian towns where days end with meals of fresh seafood and memorable sunsets, and remote settlements in the Amazon where shamans still harvest the traditional rainforest medicines of their ancestors.</p>
+    </div>
+
+    <div class="rightSide">
+      <img src="../images/mapRegions.jpg" alt="ecuador map" usemap="#ecuadormap">
+      <map name="ecuadormap">
+          <area target="" alt="Galapagos" title="Galapagos" href="../pages/galapagos.html" coords="5,5,150,99" shape="rect">
+          <area target="" alt="Pacific Coast" title="Pacific Coast" href="../pages/pacific.html" coords="248,24,189,53,156,69,158,97,153,126,132,147,122,186,105,191,105,218,104,248,91,283,138,320,153,404,204,402,190,362,185,336,207,305,224,283,201,259,173,231,198,201,201,187,206,140,190,116,214,113,225,99,258,97,276,73,269,39" shape="poly">
+          <area target="" alt="Andes" title="Andes" href="../pages/andes.html" coords="270,40,336,74,315,113,304,134,295,155,283,174,280,196,292,218,281,247,271,288,265,321,260,346,240,361,226,389,226,444,216,446,206,464,198,450,156,434,138,444,128,416,153,406,203,404,215,390,202,363,189,343,225,285,179,234,207,199,207,155,208,137,197,119,228,103,262,101,276,86,281,62" shape="poly">
+          <area target="" alt="Amazon" title="Amazon" href="../pages/amazon.html" coords="339,79,347,79,352,92,402,106,418,106,430,97,455,110,502,134,503,165,506,190,485,231,438,284,405,308,324,338,234,482,204,471,231,440,227,394,251,356,272,328,276,290,285,244,299,223,285,190,291,165,306,142,320,124,324,103" shape="poly">
+      </map>
+    </div>
+
+    <div class="leftlower">
+      <img src="../images/4-worlds.png" alt="four worlds" height="600px" width="550px">
+      <img src="../images/flag.gif" alt="flag" height="200px" width="300px">
+    </div>
+
+    <div class="rightlower">
+      <h2>Andean Adventure</h2>
+      <p>Setting off on a hike in the Andes can seem like stepping into a fairy tale: a patchwork of small villages, gurgling brooks and rolling fields and maybe a condor slowly wheeling overhead. Although the view from the top is sublime, you don’t have to scale a mountain to enjoy the Andes. These verdant landscapes make a fine backdrop for mountain biking, horseback riding or hiking from village to village, sleeping at local guesthouses along the way. Ecuador’s other landscapes offer equally alluring adventures, from surfing tight breaks off the Pacific coast to white-water rafting rivers along the jungle-clad banks of the Oriente.
+      </p>
+      <h2>Wildlife-Watching</h2>
+      <p>The famous Galápagos Islands, with their volcanic, otherworldly landscapes, are a magnet for wildlife lovers. Here, you can get up close and personal with massive lumbering tortoises, scurrying marine iguanas (the world’s only seagoing lizard), doe-eyed sea lions, prancing blue-footed boobies and a host of other unusual species both on land and sea. The Amazon rainforest offers a vastly different wildlife-watching experience. Set out on the rivers and forested trails in search of monkeys, sloths, toucans and river dolphins. Some lodges also have canopy towers offering magnificent views (and a better chance to see birdlife). Mindo's cloud forest is considered a birder's paradise, and the country has counted more than 1600 avian species.</p>
+    </div>
+                      <!-- modal with a form inside -->
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <span class="close" id="modalclose">&times;</span>
+
+          <form class="form" action="#" onsubmit="return validateform(this)" method="post">
+            PLAN YOUR TRIP: <br>
+            Name: <br>
+            <input type="text" name="name" value=""><br>
+            E-mail: <br>
+            <input type="text" name="e-mail" value=""> <br>
+            <!-- <button type="button" onclick="validateform(this)">Submit</button> -->
+            <!-- value = "Submit" -->
+            <input type="submit" name="" value="Submit">
+          </form>
+        </div>
+      </div>
+
+<script type="text/javascript">
+
+
+$("#modalclose").click(function(){
+  $("#modal").css("display","");
+});
+// When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+//   };
+$(window).click(function(e){
+  if (event.target == modal) {
+      $("#modal").css("display","");
+  }
+});
+
+
+</script>
+
+</div> <!-- end of container     -->
+
+<script src="../js/gallery.js"></script>
+  </body>
+</html>

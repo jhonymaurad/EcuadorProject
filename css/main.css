@@ -1,0 +1,212 @@
+*, html {
+    margin:0;
+    padding:0;
+}
+.container{
+  background-image: linear-gradient(#4b8aed,#acc1e2);
+  width: 100vw;
+  height: 700px;
+  z-index: 1;
+  font-family: 'Noto Serif KR', sans-serif;
+  /* display: grid;
+  grid-template-rows: 1fr 4fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+	"header header header header"
+	"galapagos pacific andes amazon"
+	"footer footer footer footer"
+	; */
+}
+.header{
+  z-index: 2;
+  height: 70px;
+  font-size: 20px;
+
+}
+.logo{
+  float: left;
+  display: block;
+  padding-left: 30px;
+
+}
+.logo img{
+  width: 240px;
+  height: 45px;
+  padding-top: 10px;
+  border: 2px;
+  box-shadow: 0 0 3px 2px rgba(0, 140, 186, 0.6);
+}
+.logo img:hover{
+  width: 280px;
+  box-shadow: 0 0 5px 4px rgba(0, 140, 186, 0.7);
+}
+.rightNav{
+  float: right;
+  display: block;
+  text-align: center;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.rightNav a{
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+.rightNav a:hover{
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.fourRegions{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 450px;
+}
+
+.galapagos{
+  position: relative;
+  width: 23%;
+  background-image: url(../images/galapagos_george.jpg);
+  background-size: cover;
+  transition: width 1s;
+
+  transition-delay: .5s;
+}
+.galapagos:hover{
+  width: 27%;
+
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(91, 147, 234);
+  background: rgb(91, 147, 234, 0.5);
+  color: #f1f1f1;
+  width: 89%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+}
+
+.galapagos:hover .overlay {
+  opacity: 1;
+}
+
+.pacific{
+  position: relative;
+  width: 23%;
+  border-color: solid red;
+  background-image: url(../images/coast.jpg);
+  background-size: cover;
+  transition: width 1s;
+  transition-delay: 1s;
+}
+.pacific:hover{
+  width: 27%;
+}
+.pacific:hover .overlay {
+  opacity: 1;
+}
+.andes{
+  position: relative;
+  width: 23%;
+  border-color: solid red;
+  background-image: url(../images/cotopaxi.jpg);
+  background-size: cover;
+  transition: width 1s;
+  transition-delay: 1s;
+}
+.andes:hover{
+  width: 27%;
+}
+.andes:hover .overlay {
+  opacity: 1;
+}
+.amazon{
+  position: relative;
+  width: 23%;
+  border-color: solid red;
+  background-image: url(../images/Ecuador-Amazon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: width 1s;
+  transition-delay: 1s;
+}
+.amazon:hover{
+  width: 27%;
+}
+.amazon:hover .overlay {
+  opacity: 1;
+}
+.footer{
+  display: inline-flex;
+  padding-top: 10px;
+}
+.socialM{
+  float: right;
+}
+
+.footer li{
+   list-style-type: none;
+   display: inline;
+   float: right;
+   padding: 20px;
+
+}
+.social img{
+  width: 40px;
+  height:40px;
+}
+.social img:hover {
+    width: 50px;
+    height: 50px;
+}
+.fourregions{
+   width: 150px;
+   height: 90px;
+   font-size: 2px;
+   text-shadow: 2px 2px 8px white;
+   color: white;
+   text-align: center;
+   padding-top: 35px;
+   background-color: #cbdaf2;
+   animation-name: expand;
+   animation-delay: 2s;
+   animation-duration: 25s;
+   animation-iteration-count: infinite;
+
+}
+
+@keyframes expand {
+    from {background-color: #cbdaf2;}
+    to {background-color: #1a64db;}
+    from{width: 100px;}
+    to{width: 1000px;}
+    0%{
+      font-size: 2px;
+      color: white;
+    }
+    25%{
+      font-size: 20px;
+      color: yellow;
+    }
+    50%{
+      font-size: 30px;
+      color: blue;
+
+    }
+    75%{
+      font-size: 35px;
+      color: red;
+    }
+    100%{
+      font-size: 35px;
+      color: white;
+    }
+}
